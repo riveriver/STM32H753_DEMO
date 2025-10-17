@@ -11,3 +11,10 @@ void report_board_version(void)
         while (1);  
     }
 }
+
+void flash_heartbeat(void)
+{
+	HAL_GPIO_TogglePin(LED_GREEN_PORT, LED_GREEN_PIN);
+	HAL_GPIO_TogglePin(LED_RED_PORT, LED_RED_PIN);
+    HAL_GPIO_TogglePin(LED_YELLOW_PORT, LED_YELLOW_PIN);
+}

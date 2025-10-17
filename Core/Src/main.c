@@ -104,6 +104,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
     report_board_version();
+    flash_heartbeat();
     HAL_Delay(1000);
   }
   /* USER CODE END 3 */
